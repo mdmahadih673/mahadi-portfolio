@@ -4,7 +4,7 @@ import { useEffect, useRef } from 'react';
 import Image from 'next/image';
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
-import { MapPin, Target, Compass, Mail, ArrowUpRight, Download } from 'lucide-react';
+import { MapPin, Target, Compass, Mail, ArrowUpRight, Download, BookOpen, Heart } from 'lucide-react';
 import { GithubIcon, LinkedinIcon } from './Icons';
 
 gsap.registerPlugin(ScrollTrigger);
@@ -132,20 +132,15 @@ export default function AboutSection() {
           <div ref={bioRef} className="lg:col-span-7 flex flex-col gap-8">
             <div className="space-y-6 text-black/85 font-editorial text-lg md:text-xl leading-relaxed">
               <p className="font-bold text-2xl md:text-3xl text-black leading-snug">
-                I am a passionate AI-Driven MERN Stack Developer dedicated to transforming ideas into
-                clean, reliable, and high-performance digital products.
+                I&apos;m a Computer Science diploma student learning full-stack web development by building practical projects.
               </p>
               <p>
-                My work centers on the intersection of robust backend engineering and
-                deliberate, highly refined user interfaces. With hands-on expertise in
+                I enjoy learning both backend engineering and thoughtful user-interface design. Through personal projects, I&apos;m practicing
                 MongoDB Atlas, Mongoose ODM, Express.js modular patterns, React, Node.js, and TypeScript—alongside
-                Next.js App Router, BetterAuth security, and Stripe integrations—I build applications where
-                structure, security, and performance operate in sync.
+                Next.js App Router, authentication, and payment integrations, while continuing to strengthen my fundamentals.
               </p>
               <p>
-                I prioritize maintainable codebases, thoughtful typography, and seamless
-                interactivity. Incorporating modern agentic workflows (Cursor AI, Antigravity, Claude Code),
-                every interface is engineered to scale smoothly and deliver exceptional user experiences.
+                I care about maintainable code, clear design, and useful interactions. I use AI coding tools to support my workflow, while learning to understand and improve the code they help me write.
               </p>
             </div>
 
@@ -194,6 +189,30 @@ export default function AboutSection() {
                     generic templates or gratuitous gradients.
                   </p>
                 </div>
+              </div>
+            </div>
+
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
+              <div className="border border-black/15 bg-white/40 p-5">
+                <div className="mb-4 flex items-center gap-3">
+                  <BookOpen className="h-4 w-4 text-[#A90E02]" />
+                  <h3 className="font-mono-code text-xs uppercase tracking-widest text-black/60">EDUCATION</h3>
+                </div>
+                <p className="font-display text-2xl uppercase">Diploma in Computer Science</p>
+                <p className="mt-1 font-editorial text-sm text-black/70">Currently studying</p>
+                <div className="mt-4 border-t border-black/10 pt-4">
+                  <p className="font-display text-xl uppercase">Secondary School Certificate</p>
+                  <p className="mt-1 font-editorial text-sm text-black/70">Completed in 2023</p>
+                </div>
+              </div>
+              <div className="border border-black/15 bg-white/40 p-5">
+                <div className="mb-4 flex items-center gap-3">
+                  <Heart className="h-4 w-4 text-[#A90E02]" />
+                  <h3 className="font-mono-code text-xs uppercase tracking-widest text-black/60">OUTSIDE THE CODE</h3>
+                </div>
+                <p className="font-editorial text-base leading-relaxed text-black/80">
+                  I enjoy playing cricket and programming. Cricket gives me a fun break, while building things with code keeps me curious and learning.
+                </p>
               </div>
             </div>
 

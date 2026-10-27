@@ -2,6 +2,7 @@
 
 import { useEffect, useRef } from 'react';
 import Image from 'next/image';
+import Link from 'next/link';
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import { projectsData } from '@/data/projects';
@@ -202,6 +203,13 @@ export default function ProjectsSection() {
 
                   {/* Action Links */}
                   <div className="flex flex-wrap items-center gap-3">
+                    <Link
+                      href={`/projects/${project.id}`}
+                      className="inline-flex items-center gap-2 border border-[#FFFBD4]/40 px-4 py-3 font-mono-code text-xs uppercase tracking-wider text-[#FFFBD4] transition-colors hover:border-[#FFFBD4] hover:bg-[#FFFBD4] hover:text-black"
+                    >
+                      <span>Project Details</span>
+                      <ArrowUpRight className="h-3.5 w-3.5" />
+                    </Link>
                     <a
                       href={project.live}
                       target="_blank"

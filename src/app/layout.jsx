@@ -24,6 +24,10 @@ const spaceGrotesk = Space_Grotesk({
 });
 
 export const metadata = {
+  metadataBase: new URL("https://mahadi-portfolio-wine.vercel.app"),
+  alternates: {
+    canonical: "/",
+  },
   title: "Mahadi Hasan — MERN Stack Developer | Creative Portfolio",
   description:
     "Editorial and cinematic portfolio of Mahadi Hasan. Specializing in high-performance full-stack web applications, React, Next.js, TypeScript, Node.js, Express, MongoDB, and AI-Driven Web Engineering.",
@@ -40,6 +44,7 @@ export const metadata = {
   authors: [{ name: "Mahadi Hasan", url: "https://github.com/mdmahadih673" }],
   creator: "Mahadi Hasan",
   openGraph: {
+    url: "https://mahadi-portfolio-wine.vercel.app",
     title: "Mahadi Hasan — MERN Stack Developer",
     description: "Creative + Minimal + Clean + Editorial Portfolio",
     type: "website",

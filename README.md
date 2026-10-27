@@ -2,6 +2,8 @@
 
 A production-quality, highly creative, editorial personal portfolio website built with **Next.js (App Router)**, **Tailwind CSS**, **GSAP ScrollTrigger**, and **Lenis** smooth scrolling.
 
+Live portfolio: [mahadi-portfolio-wine.vercel.app](https://mahadi-portfolio-wine.vercel.app/)
+
 ---
 
 ## 🎨 Design Direction

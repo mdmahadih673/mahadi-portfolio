@@ -15,6 +15,16 @@ export const projectsData = [
       "Most-read ranking system (সর্বাধিক পঠিত) and clean article viewer",
       "Fully responsive mobile-first typography optimized for high readability"
     ],
+    challenges: [
+      "Organizing many Bengali news categories and article layouts while keeping navigation easy to follow",
+      "Making the editorial typography readable across desktop and smaller mobile screens",
+      "Presenting breaking-news and timestamp elements clearly without overwhelming the page"
+    ],
+    futurePlans: [
+      "Connect the interface to a managed news API or editorial CMS for regularly updated stories",
+      "Add article search, bookmarks, and richer reading preferences",
+      "Improve accessibility and performance with ongoing real-device testing"
+    ],
     github: "https://github.com/mdmahadih673/bangla-news-24",
     live: "https://bangla-news-24-rho.vercel.app/",
     layoutVariant: "editorial-left"
@@ -35,6 +45,16 @@ export const projectsData = [
       "Itemized search and market-based min/max rate comparisons",
       "Fast client-side state handling and accessible responsive grid design"
     ],
+    challenges: [
+      "Presenting changing commodity prices in a way that is easy to compare at a glance",
+      "Designing useful category filters and search for a broad range of Bengali grocery items",
+      "Keeping price and percentage-change indicators understandable on narrow screens"
+    ],
+    futurePlans: [
+      "Add a trusted data-entry workflow and historical price charts",
+      "Show market and location-specific price comparisons with clear data timestamps",
+      "Add saved items and alerts for selected price changes"
+    ],
     github: "https://github.com/mdmahadih673/assignment-7",
     live: "https://assignment-7-flw1.vercel.app/",
     layoutVariant: "editorial-right"
@@ -54,6 +74,16 @@ export const projectsData = [
       "Interactive workout planner with real-time set tracking and saved routines",
       "High-contrast dark gym UI with responsive card layouts and fluid animations",
       "Active routine counter, plan builder, and fast client-side state persistence"
+    ],
+    challenges: [
+      "Making exercise selection and workout planning simple to use during a training session",
+      "Keeping set tracking and routine state consistent as users interact with the planner",
+      "Balancing a high-contrast dark visual style with clear, readable controls"
+    ],
+    futurePlans: [
+      "Add user accounts and cloud-synced workout history",
+      "Let users create custom exercises and review progress over time",
+      "Improve routine sharing and accessibility for keyboard and assistive-technology users"
     ],
     github: "https://github.com/mdmahadih673/assienment-6",
     live: "https://assienment-6.vercel.app/",
