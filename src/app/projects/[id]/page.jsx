@@ -42,8 +42,13 @@ export default async function ProjectDetailsPage({ params }) {
               <ExternalLink className="h-4 w-4" /> Live project <ArrowUpRight className="h-3.5 w-3.5" />
             </a>
             <a href={project.github} target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 border border-[#444] px-5 py-3 font-mono-code text-xs uppercase tracking-wider hover:border-[#FFFBD4]">
-              GitHub repository <ArrowUpRight className="h-3.5 w-3.5" />
+              {project.backendGithub ? 'Frontend source' : 'GitHub repository'} <ArrowUpRight className="h-3.5 w-3.5" />
             </a>
+            {project.backendGithub && (
+              <a href={project.backendGithub} target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 border border-[#444] px-5 py-3 font-mono-code text-xs uppercase tracking-wider hover:border-[#FFFBD4]">
+                Backend source <ArrowUpRight className="h-3.5 w-3.5" />
+              </a>
+            )}
           </div>
         </div>
 

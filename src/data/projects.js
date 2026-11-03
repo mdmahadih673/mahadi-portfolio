@@ -1,7 +1,41 @@
 export const projectsData = [
   {
-    id: "bangla-news-24",
+    id: "booknook",
     number: "01",
+    title: "BookNook",
+    tagline: "A Community Library for Discovering, Sharing & Borrowing Books",
+    category: "Full-Stack Library Platform",
+    year: "2026",
+    image: "/images/project-booknook.png",
+    overview: "BookNook is an online library where readers can browse and sort books, borrow available copies for 14 days, and manage the books they contribute. Members can sign in with email and social providers, maintain a profile, and upload book covers.",
+    technologies: ["Next.js", "React", "TypeScript", "Tailwind CSS", "Better Auth", "Express.js", "MongoDB", "ImgBB"],
+    features: [
+      "Browse, search, and sort a shared collection by title, availability, or newest first",
+      "Register or sign in with email/password, Google, or GitHub",
+      "Add, edit, and delete books, including uploaded cover images",
+      "Borrow available copies for 14 days and return them from a personal borrow list",
+      "Manage a profile with an editable name and uploaded profile photo",
+      "Responsive pages with loading states and a custom not-found page"
+    ],
+    challenges: [
+      "Connecting Better Auth identity on the frontend with JWT-protected Express API requests",
+      "Keeping book ownership and borrow/return actions scoped to the authenticated member",
+      "Handling book-copy availability and borrow records consistently with MongoDB",
+      "Supporting book-cover and profile-photo uploads through ImgBB"
+    ],
+    futurePlans: [
+      "Add automated tests for authentication, book management, and borrow/return flows",
+      "Improve discovery with richer filters, pagination, and saved-book lists",
+      "Add borrowing reminders and clearer due-date status for readers"
+    ],
+    github: "https://github.com/mdmahadih673/BookNook-frontend",
+    backendGithub: "https://github.com/mdmahadih673/BookNook-backend",
+    live: "https://book-nook-frontend-two.vercel.app/",
+    layoutVariant: "editorial-left"
+  },
+  {
+    id: "bangla-news-24",
+    number: "02",
     title: "Bangla News 24",
     tagline: "Real-Time Digital Journalism & News Aggregator",
     category: "Full-Stack Media Portal",
@@ -31,7 +65,7 @@ export const projectsData = [
   },
   {
     id: "bazar-dor",
-    number: "02",
+    number: "03",
     title: "Bazar Dor (বাজার দর)",
     tagline: "Daily Commodity Price Tracker & Market Analytics",
     category: "Full-Stack Web Application",
@@ -61,7 +95,7 @@ export const projectsData = [
   },
   {
     id: "fitlog",
-    number: "03",
+    number: "04",
     title: "FitLog",
     tagline: "Minimalist Workout Companion & Routine Planner",
     category: "Interactive Fitness Application",
