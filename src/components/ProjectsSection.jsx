@@ -11,10 +11,11 @@ import { GithubIcon } from './Icons';
 
 gsap.registerPlugin(ScrollTrigger);
 
-export default function ProjectsSection() {
+export default function ProjectsSection({ showAll = false }) {
   const sectionRef = useRef(null);
   const headingRef = useRef(null);
   const projectsListRef = useRef(null);
+  const visibleProjects = showAll ? projectsData : projectsData.slice(0, 2);
 
   useEffect(() => {
     const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
@@ -114,7 +115,7 @@ export default function ProjectsSection() {
 
         {/* Project Entries List with Varied Layouts */}
         <div ref={projectsListRef} className="space-y-28 md:space-y-40">
-          {projectsData.map((project, index) => {
+          {visibleProjects.map((project, index) => {
             const isEven = index % 2 === 1;
 
             return (
@@ -247,6 +248,18 @@ export default function ProjectsSection() {
             );
           })}
         </div>
+
+        {!showAll && (
+          <div className="mt-16 flex justify-center md:mt-20">
+            <Link
+              href="/projects"
+              className="inline-flex items-center gap-3 border border-[#FFFBD4]/40 px-6 py-4 font-mono-code text-xs font-bold uppercase tracking-widest text-[#FFFBD4] transition-colors hover:border-[#A90E02] hover:bg-[#A90E02]"
+            >
+              See All Projects
+              <ArrowUpRight className="h-4 w-4" />
+            </Link>
+          </div>
+        )}
       </div>
     </section>
   );
