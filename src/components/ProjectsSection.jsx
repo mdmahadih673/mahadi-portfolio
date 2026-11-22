@@ -251,13 +251,15 @@ export default function ProjectsSection({ showAll = false }) {
 
         {!showAll && (
           <div className="mt-16 flex justify-center md:mt-20">
-            <Link
+            {/* Force a fresh document load to avoid stale client-side route data. */}
+            {/* eslint-disable-next-line @next/next/no-html-link-for-pages */}
+            <a
               href="/projects"
               className="inline-flex items-center gap-3 border border-[#FFFBD4]/40 px-6 py-4 font-mono-code text-xs font-bold uppercase tracking-widest text-[#FFFBD4] transition-colors hover:border-[#A90E02] hover:bg-[#A90E02]"
             >
               See All Projects
               <ArrowUpRight className="h-4 w-4" />
-            </Link>
+            </a>
           </div>
         )}
       </div>
