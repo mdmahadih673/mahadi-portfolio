@@ -1,7 +1,40 @@
 export const projectsData = [
   {
-    id: "mentorlagbe",
+    id: "wanderlast",
     number: "01",
+    title: "Wanderlast",
+    tagline: "Discover your next adventure",
+    category: "Travel Booking Platform",
+    year: "2026",
+    image: "/images/project-wanderlust.webp",
+    overview: "Wanderlast is a travel booking app for discovering destinations and planning trips. Visitors can browse curated travel experiences and search by location, date or duration, budget, and group size. Signed-in users can book or cancel trips and manage destination listings.",
+    technologies: ["Next.js", "React", "Tailwind CSS", "Better Auth", "Express.js", "MongoDB"],
+    features: [
+      "Search trips by location, date or duration, budget, and number of travelers",
+      "Browse featured destinations with trip duration, price, and ratings",
+      "Create an account and manage bookings, including cancellation",
+      "Add, edit, and remove destination listings when signed in",
+      "Separate Next.js frontend and Express API backed by MongoDB"
+    ],
+    challenges: [
+      "Connecting account sessions to protected booking and destination management actions",
+      "Keeping trip search, destination details, and booking flows consistent across the frontend and API",
+      "Deploying the Next.js application and Express API as separate services"
+    ],
+    futurePlans: [
+      "Add booking status updates and trip reminders for travelers",
+      "Improve destination discovery with richer filters and saved trips",
+      "Add automated checks for sign in, booking, cancellation, and destination management"
+    ],
+    github: "https://github.com/mdmahadih673/wanderlust",
+    backendGithub: "https://github.com/mdmahadih673/wanderlust-sarver",
+    live: "https://wanderlust-orpin-pi.vercel.app/",
+    backendLive: "https://wanderlust-sarver.vercel.app/",
+    layoutVariant: "editorial-left"
+  },
+  {
+    id: "mentorlagbe",
+    number: "02",
     title: "MentorLagbe",
     tagline: "Find the tutor who fits the way you learn",
     category: "Tuition & Mentorship Platform",
@@ -34,7 +67,7 @@ export const projectsData = [
   },
   {
     id: "hireloop",
-    number: "02",
+    number: "03",
     title: "Hireloop",
     tagline: "Find work. Hire talent.",
     category: "Job Search & Recruitment Platform",
@@ -67,7 +100,7 @@ export const projectsData = [
   },
   {
     id: "booknook",
-    number: "03",
+    number: "04",
     title: "BookNook",
     tagline: "A Community Library for Discovering, Sharing & Borrowing Books",
     category: "Full-Stack Library Platform",
@@ -101,7 +134,7 @@ export const projectsData = [
   },
   {
     id: "bangla-news-24",
-    number: "04",
+    number: "05",
     title: "Bangla News 24",
     tagline: "Real-Time Digital Journalism & News Aggregator",
     category: "Full-Stack Media Portal",
@@ -131,7 +164,7 @@ export const projectsData = [
   },
   {
     id: "bazar-dor",
-    number: "05",
+    number: "06",
     title: "Bazar Dor (বাজার দর)",
     tagline: "Daily Commodity Price Tracker & Market Analytics",
     category: "Full-Stack Web Application",
@@ -161,7 +194,7 @@ export const projectsData = [
   },
   {
     id: "fitlog",
-    number: "06",
+    number: "07",
     title: "FitLog",
     tagline: "Minimalist Workout Companion & Routine Planner",
     category: "Interactive Fitness Application",
