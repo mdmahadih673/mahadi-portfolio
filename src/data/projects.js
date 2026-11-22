@@ -1,7 +1,73 @@
 export const projectsData = [
   {
-    id: "booknook",
+    id: "mentorlagbe",
     number: "01",
+    title: "MentorLagbe",
+    tagline: "Find the tutor who fits the way you learn",
+    category: "Tuition & Mentorship Platform",
+    year: "2026",
+    image: "/images/project-mentorlagbe.png",
+    overview: "MentorLagbe connects students with tutors through reviewed tuition listings, applications, and role-based dashboards. Students can search and filter active opportunities, apply, and follow updates. Tutors can publish listings and manage applicants, while admins moderate posts and transactions.",
+    technologies: ["Next.js", "React", "TypeScript", "Tailwind CSS", "Better Auth", "Express.js", "MongoDB", "Stripe"],
+    features: [
+      "Search, filter, and sort approved tuition posts by subject, class, location, mode, and fee",
+      "Separate student, tutor, and admin dashboards with role-aware access",
+      "Apply for lessons and track application status; tutors can review and respond to applicants",
+      "Admin tools for user management, tuition moderation, and transaction review",
+      "Stripe-powered Pro plans for students and tutors"
+    ],
+    challenges: [
+      "Coordinating role-specific permissions across student, tutor, and admin workflows",
+      "Keeping tuition approval, visibility, and applications in sync across the frontend and API",
+      "Verifying authenticated API requests and subscription payments across separate services"
+    ],
+    futurePlans: [
+      "Add saved tuition listings, richer recommendations, and real-time application notifications",
+      "Add automated end-to-end checks for authentication, applications, moderation, and payments",
+      "Expand search with server-side pagination and more precise schedule and location filters"
+    ],
+    github: "https://github.com/mdmahadih673/mentorlagbe-frontend",
+    backendGithub: "https://github.com/mdmahadih673/mentorlagbe-backend",
+    live: "https://mentorlagbe-frontend.vercel.app/",
+    backendLive: "https://mentorlagbe-backend.vercel.app/",
+    layoutVariant: "editorial-left"
+  },
+  {
+    id: "hireloop",
+    number: "02",
+    title: "Hireloop",
+    tagline: "Find work. Hire talent.",
+    category: "Job Search & Recruitment Platform",
+    year: "2026",
+    image: "/images/project-hireloop.png",
+    overview: "Hireloop brings job seekers and recruiters into one platform. Job seekers can browse openings, apply, and follow application updates. Recruiters can publish roles, review applicants, and manage hiring progress. One-time Premium plans are available to both sides.",
+    technologies: ["Next.js", "React", "TypeScript", "Better Auth", "Express.js", "MongoDB", "Stripe"],
+    features: [
+      "Browse and filter open roles, and discover companies hiring through the platform",
+      "Apply for jobs and track application status from a seeker dashboard",
+      "Publish job openings and review applicants through recruiter tools",
+      "Role-specific recruiter and job-seeker dashboards with Premium access options",
+      "Authenticated frontend-to-API requests and Stripe checkout support"
+    ],
+    challenges: [
+      "Building distinct job-seeker and recruiter workflows around a shared job and application system",
+      "Forwarding authenticated sessions through the frontend API proxy to the backend",
+      "Keeping Premium access and payment handling consistent across both user roles"
+    ],
+    futurePlans: [
+      "Add saved jobs, job alerts, and richer application timeline notifications",
+      "Add recruiter analytics for job views, application volume, and hiring progress",
+      "Expand filtering and add automated checks for role access and application workflows"
+    ],
+    github: "https://github.com/mdmahadih673/hireloop-client",
+    backendGithub: "https://github.com/mdmahadih673/hireloop-sarver",
+    live: "https://hireloop-client-jets.vercel.app/",
+    backendLive: "https://hireloop-sarver.vercel.app/",
+    layoutVariant: "editorial-right"
+  },
+  {
+    id: "booknook",
+    number: "03",
     title: "BookNook",
     tagline: "A Community Library for Discovering, Sharing & Borrowing Books",
     category: "Full-Stack Library Platform",
@@ -35,7 +101,7 @@ export const projectsData = [
   },
   {
     id: "bangla-news-24",
-    number: "02",
+    number: "04",
     title: "Bangla News 24",
     tagline: "Real-Time Digital Journalism & News Aggregator",
     category: "Full-Stack Media Portal",
@@ -65,7 +131,7 @@ export const projectsData = [
   },
   {
     id: "bazar-dor",
-    number: "03",
+    number: "05",
     title: "Bazar Dor (বাজার দর)",
     tagline: "Daily Commodity Price Tracker & Market Analytics",
     category: "Full-Stack Web Application",
@@ -95,7 +161,7 @@ export const projectsData = [
   },
   {
     id: "fitlog",
-    number: "04",
+    number: "06",
     title: "FitLog",
     tagline: "Minimalist Workout Companion & Routine Planner",
     category: "Interactive Fitness Application",

@@ -228,8 +228,19 @@ export default function ProjectsSection() {
                       className="inline-flex items-center gap-2 px-4 py-3 border border-[#333333] text-[#FFFBD4] font-mono-code text-xs uppercase tracking-wider hover:border-[#A90E02] hover:text-[#A90E02] transition-colors"
                     >
                       <GithubIcon className="w-4 h-4" />
-                      <span>GitHub Code</span>
+                      <span>{project.backendGithub ? 'Frontend Code' : 'GitHub Code'}</span>
                     </a>
+                    {project.backendGithub && (
+                      <a
+                        href={project.backendGithub}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="inline-flex items-center gap-2 px-4 py-3 border border-[#333333] text-[#FFFBD4] font-mono-code text-xs uppercase tracking-wider hover:border-[#A90E02] hover:text-[#A90E02] transition-colors"
+                      >
+                        <GithubIcon className="w-4 h-4" />
+                        <span>Backend Code</span>
+                      </a>
+                    )}
                   </div>
                 </div>
               </div>

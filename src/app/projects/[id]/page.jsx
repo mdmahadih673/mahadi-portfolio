@@ -41,6 +41,11 @@ export default async function ProjectDetailsPage({ params }) {
             <a href={project.live} target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 bg-[#A90E02] px-5 py-3 font-mono-code text-xs font-bold uppercase tracking-wider hover:bg-[#850b02]">
               <ExternalLink className="h-4 w-4" /> Live project <ArrowUpRight className="h-3.5 w-3.5" />
             </a>
+            {project.backendLive && (
+              <a href={project.backendLive} target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 border border-[#444] px-5 py-3 font-mono-code text-xs uppercase tracking-wider hover:border-[#FFFBD4]">
+                Backend API <ArrowUpRight className="h-3.5 w-3.5" />
+              </a>
+            )}
             <a href={project.github} target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 border border-[#444] px-5 py-3 font-mono-code text-xs uppercase tracking-wider hover:border-[#FFFBD4]">
               {project.backendGithub ? 'Frontend source' : 'GitHub repository'} <ArrowUpRight className="h-3.5 w-3.5" />
             </a>
