@@ -17,6 +17,7 @@ function revealNavigation() {
 export default function HeroSection() {
   const sectionRef = useRef(null);
   const nameRef = useRef(null);
+  const backdropRef = useRef(null);
   const portraitRef = useRef(null);
   const introRef = useRef(null);
   const detailsRef = useRef(null);
@@ -29,6 +30,7 @@ export default function HeroSection() {
 
     context = gsap.context(() => {
       gsap.set(nameRef.current, { autoAlpha: 1, scale: reducedMotion ? 1 : 0.84 });
+      gsap.set(backdropRef.current, { autoAlpha: 0 });
       gsap.set(portraitRef.current, reducedMotion
         ? { autoAlpha: 0 }
         : { autoAlpha: 0, clipPath: 'inset(100% 0 0 0)', y: 35, scale: 1.04 });
@@ -62,6 +64,7 @@ export default function HeroSection() {
 
       transition
         .to(nameRef.current, reducedMotion ? { duration: 0.8 } : { scale: 1, duration: 0.8 }, 0)
+        .to(backdropRef.current, { autoAlpha: 1, duration: 1.15 }, 0.38)
         .to(portraitRef.current, reducedMotion
           ? { autoAlpha: 1, duration: 1.15 }
           : { autoAlpha: 1, clipPath: 'inset(0 0 0 0)', y: 0, scale: 1, duration: 1.15 }, 0.38)
@@ -81,21 +84,32 @@ export default function HeroSection() {
   }, []);
 
   return (
-    <section id="hero" ref={sectionRef} className="relative isolate h-[100svh] w-full overflow-hidden bg-[#090807] text-[#FFFBD4]">
+    <section id="hero" ref={sectionRef} className="relative isolate h-[100svh] w-full overflow-hidden bg-[#050505] text-[#FFFBD4]">
       <div className="pointer-events-none absolute inset-4 z-40 border border-[#FFFBD4]/20 sm:inset-7" />
+
+      <div ref={backdropRef} className="pointer-events-none absolute inset-0 z-0">
+        <Image
+          src="/images/mahadi-hero-wide.png"
+          alt=""
+          fill
+          priority
+          sizes="100vw"
+          className="object-cover object-[72%_center]"
+        />
+      </div>
 
       <h1 ref={nameRef} className="pointer-events-none absolute left-1/2 top-[43%] z-10 w-full -translate-x-1/2 -translate-y-1/2 whitespace-nowrap text-center font-display text-[clamp(3.3rem,17.2vw,18rem)] font-black leading-[0.78] tracking-[-0.055em] text-[#C61108] sm:top-[43%]">
         MAHADI HASAN
       </h1>
 
-      <div ref={portraitRef} className="pointer-events-none absolute bottom-0 right-[-21vw] z-20 h-[88svh] w-[132vw] sm:right-[-17vw] sm:h-[100svh] sm:w-[112vw] lg:right-[-11vw] lg:w-[93vw]">
+      <div ref={portraitRef} className="pointer-events-none absolute inset-0 z-20">
         <Image
-          src="/images/mahadi-hero-cutout.png"
+          src="/images/mahadi-hero-wide-foreground.png"
           alt="Portrait of Mahadi Hasan"
           fill
-          preload
-          sizes="(max-width: 640px) 132vw, 112vw"
-          className="object-contain object-bottom"
+          priority
+          sizes="100vw"
+          className="object-cover object-[72%_center]"
         />
       </div>
 
